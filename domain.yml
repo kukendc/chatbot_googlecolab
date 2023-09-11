@@ -1,0 +1,47 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_name
+  - ask_func_list
+  - goodbye
+  - product
+  - product_cart
+  - address
+  - numbers_list
+
+responses:
+  utter_greet:
+  - text: "Chào Bạn! Chúng tôi có thể giúp gì bạn ?"
+  - text: "Bạn cần chúng tôi giúp gì, nếu không phiền bạn có thể nói rõ hơn cụ thể việc của mình."
+
+  utter_product:
+    - text: "Sản phẩm này hiện tại bên em vẫn còn, anh chị cần số lượng bao nhiêu ạ ?"
+    - text: "Sản phẩm hiện tại bên em vẫn còn trong kho, anh (chị) cần lấy số lượng bao nhiêu để chúng em kiểm tra cụ thể, bên em đang còn 100 sản phẩm ạ."
+  
+  utter_product_cart:
+  - text: "Anh chị có thể cho em xin địa chỉ để nhận hàng được không ?"
+  - text: "Chị có thể cho em địa chỉ để nhận hàng không ạ?"
+  
+  utter_cart_bye:
+  - text: "Cảm ơn anh chị đã ghế của hàng của chúng em, Chúc anh chị một ngày trần ngập niềm vui."
+
+  utter_iamabot:
+  - text: "Dạ thưa. Tên của em là Quang Tèo nhà em rất nghèo nhưng em lại thích trèo để thoát được cái nghèo. "
+  - text: "Em họ Bank, tên Bot! Người ta hay gọi em là Bank Bot thông minh xinh đẹp giỏi giang nhất vũ trụ ạ! Quý khách cần trợ giúp gì ạ?"
+  - text: "Dạ thưa. Tên Tiếng Việt của em là Trợ lý ảo Ngân hàng nhưng em thích gọi bằng tên Tiếng Anh là Bank Bot cho nó Tây!"
+
+  utter_func_list:
+  - text: "Em có thể làm được rất nhiều thứ: hát, đọc thơ, đọc chuyện...nhưng giờ em chỉ chat thôi!"
+  - text: "Em biết đếm tiền còn việc kiếm tiếm thì em lại không biết, cho nên anh (chị) hỏi ít thôi không lại bị đánh hội đồng đó"
+
+  utter_goodbye:
+  - text: "Chào tạm biệt"
+  
+  # utter_numbers:
+  # - text: 
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

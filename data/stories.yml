@@ -1,0 +1,25 @@
+version: "3.1"
+
+stories:
+
+- story: sad path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: product
+  - action: utter_product
+  - intent: product_cart
+  - action: utter_product_cart
+  - intent: address
+  - action: utter_cart_bye
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_name
+  - action: utter_iamabot
+  - intent: ask_func_list
+  - action: utter_func_list
+  - intent: goodbye
+  - action: utter_goodbye
